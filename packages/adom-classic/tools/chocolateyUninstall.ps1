@@ -1,10 +1,8 @@
 $id = "adom-classic"
+$name = "Ancient Domains of Mystery (ADOM)"
 
 $tools = Split-Path $MyInvocation.MyCommand.Definition
 
 . $tools\shortcut.ps1
 
-$link = "adom"
-$folder = "CommonPrograms"
-
-Remove-Shortcut -Link $link -SpecialFolder $folder
+Remove-Shortcut -Link $name -SpecialFolder "CommonPrograms"
