@@ -18,4 +18,5 @@ try {
   Write-ChocolateySuccess $id
 } catch {
   Write-ChocolateyFailure $id $_.Exception.Message
+  throw
 }
